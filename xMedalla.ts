@@ -11,4 +11,4 @@ console.log("Entregar medalla de bronce");
 break;
 default:
 console.log("Entregar mención de participación");
-}
+} NO ME SALIó
