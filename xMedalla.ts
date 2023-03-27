@@ -1,4 +1,4 @@
-let posicionLlegada : number = readlineSync.questionInt ("Ingrese la posición de llegada del competidor: ");
+let posicionLlegada : number = rls.questionInt ("Ingrese la posición de llegada del competidor: ");
 switch (posicionLlegada) {
 case 1:
 console.log("Entregar medalla de oro");
