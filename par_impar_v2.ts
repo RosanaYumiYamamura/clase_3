@@ -5,23 +5,13 @@ Ejercicio – Par/Impar
 •En el caso de ser 0 (cero) el algoritmo deberá informarlo */
 ​
 import * as rls from "readline-sync";
-​
-const n1: number = rls.questionInt("Ingrese N° a evaluar: ");
-​
-if  (n1 == 0){
-    console.log("El N° ingresado es 0 (Cero).")
-}   
-​
-else{  
-    const numStr: string = n1.toString(); // convierte el número en una cadena
-    const unit: string = numStr.slice(-1); // obtiene el último caracter de la cadena
-​
-    if (unit == "0" || unit == "2" || unit == "4" || unit == "6" || unit == "8") {
-    console.log("El número es PAR.")    
-    }
-    else {
-        console.log("El número es IMPAR.")
-    }
-​
+​let inputNum: number = 0;
+while (inputNum <= 0){
+    inputNum = rls.questionInt("ingrese un número mayor que cero");
 }
-ERROR FALTA AUMENTODESUELDO.TS
+
+if (inputNum % 2 === 0) {
+    console.log("El número es par");
+} else {
+    console.log("El número es impar");
+} 
